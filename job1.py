@@ -26,7 +26,7 @@ def main():
     personality = st.text_area("请输入你的性格特征:")
     experience = st.text_area("请输入你的工作经历:")
     skills = st.text_area("请输入你的所学技能课程:")
-    desired_career = st.text_area("请输入你的期望职业岗位:")
+    # desired_career = st.text_area("请输入你的期望职业岗位:")
 
     # 使用 OpenAI API 推荐职业岗位
     # if st.button("推荐职业岗位"):
@@ -52,7 +52,7 @@ def main():
         #           f"我学到了一些技能: {skills}. "
         #           f"我想当一名:{desired_career}. "
         #           f"你能为我推荐一个适合我的职业，并写一份工作的自我介绍吗?")
-        prompt = f"根据输入的个人信息，推荐适合的职业岗位，并写一份工作的自我推荐介绍。个人喜好特点: {interests}, 性格特征: {personality}, 工作经历: {experience}, 所学技能课程: {skills}, 期望职业岗位: {desired_career}"
+        prompt = f"根据输入的个人信息，推荐适合的职业岗位，并写一份工作的自我推荐介绍。个人喜好特点: {interests}, 性格特征: {personality}, 工作经历: {experience}, 所学技能课程: {skills}"
         career_recommendation = generate_text(prompt)
         st.success(career_recommendation)
 
