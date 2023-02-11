@@ -56,7 +56,7 @@ def main():
         career_recommendation = generate_text(prompt)
         st.success(career_recommendation)
 
-    st.write("This tool is powered by OpenAI.")
+    st.write("这个工具是使用OpenAI 进行推荐任务，测试阶段，还有不足，有建议可以发送到邮件：rnmtq9@qq.com")
 
 if __name__ == "__main__":
     main()
